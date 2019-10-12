@@ -3,5 +3,6 @@
 // 大写换成小写 小写换成大写
 let str = 'zhuzhuxia是真的SHUAI'
 str = str.replace(/[a-zA-Z]/g,res=>{
-    console.log(res);
+    return res.toUpperCase() === res? res.toLowerCase():res.toUpperCase()
 })
+console.log(str)
